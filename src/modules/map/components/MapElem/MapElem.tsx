@@ -31,7 +31,7 @@ const defaultOptions = {
 const MapElem: React.FC<MapElemProps> = ({ mapRef }) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.REACT_APP_API_KEY,
+    googleMapsApiKey: 'AIzaSyB5XoC7q0OJ5vOR8CiQG5DWSf6B0erjKKU',
   });
   const isAdding = useAppSelector((state) => state.map.isAdding);
   const markers = useAppSelector((state) => state.map.markers);
