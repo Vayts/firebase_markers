@@ -1,0 +1,57 @@
+@import "@styles/variables";
+
+.MarkerItemWrapper {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid $border-color;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $content-color-hover;
+  }
+}
+
+.MarkerContent {
+  flex-grow: 1;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.MarkerTitle {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.MarkerInfoList {
+  li {
+
+    span {
+      font-size: 0.9em;
+    }
+
+    span:first-child {
+      font-weight: 500;
+    }
+    span:last-child {
+      color: $light-text-color;
+    }
+  }
+}
+
+.MarkerButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  user-select: none;
+  color: $light-text-color;
+
+  &:hover {
+    color: $text-color;
+  }
+}

@@ -1,0 +1,52 @@
+@import "@styles/variables";
+
+.SidebarWrapper {
+  height: 100vh;
+  width: 350px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: $content-color;
+  border-right: 1px solid $border-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.SidebarLoader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $light-text-color;
+  opacity: 0.3;
+  z-index: 101;
+}
+
+.SidebarTitle {
+  margin: 0;
+  border-bottom: 1px solid $border-color;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.MarkersList {
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.SidebarClearButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $light-text-color;
+  font-size: 0.8em;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-color;
+  }
+}
